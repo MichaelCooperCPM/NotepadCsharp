@@ -49,5 +49,15 @@ namespace NotepadCsharp
                 textBox1.WordWrap = true;
             }
         }
+
+        private void fontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = fontDialog1.ShowDialog();
+            
+            if (result == DialogResult.OK)
+            {
+                textBox1.Font = fontDialog1.Font;
+            }
+        }
     }
 }
