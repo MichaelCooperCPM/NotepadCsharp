@@ -21,5 +21,19 @@ namespace NotepadCsharp
         {
             Application.Exit();
         }
+
+        private void statusBarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (statusBarToolStripMenuItem.Checked)
+            {
+                statusStrip1.Hide();
+                statusBarToolStripMenuItem.Checked = false;
+            }
+            else
+            {
+                statusStrip1.Show();
+                statusBarToolStripMenuItem.Checked = true;
+            }
+        }
     }
 }
