@@ -35,5 +35,19 @@ namespace NotepadCsharp
                 statusBarToolStripMenuItem.Checked = true;
             }
         }
+
+        private void wordWrapToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (wordWrapToolStripMenuItem.Checked)
+            {
+                wordWrapToolStripMenuItem.Checked = false;
+                textBox1.WordWrap = false;
+            }
+            else
+            {
+                wordWrapToolStripMenuItem.Checked = true;
+                textBox1.WordWrap = true;
+            }
+        }
     }
 }
